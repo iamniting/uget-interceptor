@@ -1,0 +1,10 @@
+{
+    "name": "com.ugetdm.chrome",
+    "description": "Integrate uGet with Google Chrome",
+    "path": "/usr/bin/uget-integrator",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://kiidkgmhojoiihhllddakgihcpaheffg/",
+        "chrome-extension://onioelmaicacljfkbpcojeflpckoadkm/"
+    ]
+}

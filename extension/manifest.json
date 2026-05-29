@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "uGet Download Interceptor",
+  "short_name": "uGet Interceptor",
+  "version": "1.0.0",
+  "description": "Intercept Chrome downloads and send them to uGet using uget-integrator.",
+  "minimum_chrome_version": "88",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJaoxJ5DJTGpPazNtUz8x/Rg5Krpo1h1bOuOJuM5rzROPMWQBoYL5l/siUTZw1Qwn7zQZM9g5Ycg1u8xz9ID3/2wg+zSmWDiAysw8l+YOjQ60O/RZkk5u8v1uQyFqEKLVD4PGlWpljvQ/x4C/X312uZa+KGQWyhMUA0UGeFMXNKsptkUn7MNkwVG5/oUo5rnWedmOD5erYqIx5Ysno9Ar2HwQHsa4XwPncT4r0KDC45XP8T1vknEBFmGZEx9Gn1hrQdDUMDLEQcDw66DJjUwcYl02LLi/A2makJmlybKsBm7USC8btxxLTQipj4cMrfgP/NXZHnh9qBffNMNhW5l+QIDAQAB",
+  "permissions": [
+    "downloads",
+    "storage",
+    "nativeMessaging",
+    "cookies",
+    "notifications",
+    "webRequest",
+    "alarms"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "uGet Download Interceptor",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "64": "icons/icon64.png"
+    }
+  },
+  "icons": {
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "64": "icons/icon64.png"
+  }
+}

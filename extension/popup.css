@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  min-width: 330px;
+  margin: 0;
+  background: Canvas;
+  color: CanvasText;
+}
+
+.card {
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  margin: 2px 0 0;
+  color: color-mix(in srgb, CanvasText 65%, Canvas 35%);
+  font-size: 12px;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px;
+  border: 1px solid color-mix(in srgb, CanvasText 15%, Canvas 85%);
+  border-radius: 12px;
+}
+
+.switch-row span {
+  display: grid;
+  gap: 3px;
+}
+
+.switch-row small {
+  color: color-mix(in srgb, CanvasText 65%, Canvas 35%);
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 46px;
+  height: 26px;
+  border-radius: 999px;
+  background: #64748b;
+  position: relative;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+  background: white;
+  transition: transform .16s ease;
+}
+
+input[type="checkbox"]:checked {
+  background: #16a34a;
+}
+
+input[type="checkbox"]:checked::before {
+  transform: translateX(20px);
+}
+
+.status-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, CanvasText 12%, Canvas 88%);
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  background: #64748b;
+}
+
+.status-dot.connected {
+  background: #16a34a;
+}
+
+.status-dot.disconnected {
+  background: #dc2626;
+}
+
+.status-dot.disabled {
+  background: #64748b;
+}
+
+.status-dot.checking {
+  background: #f59e0b;
+}
